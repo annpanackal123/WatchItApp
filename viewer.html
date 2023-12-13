@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
+  <head>
+    <meta charset="UTF-8">
+    <title>Video Viewer</title>
+      <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+      <script type="text/javascript" src="JS/bootstrap.js"></script>
+      <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+
+      <script type="text/javascript" src="JS/app.js"></script>
+  </head>
+  <body>
+    <div  class="container">
+        <!--Header-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+            <div class="col-8" style="text-align: center;">
+              <h3>WatchIt App</h3>
+            </div>
+            <div class="col-2"  ></div>
+        </div>
+        <!--added new code to login -->
+        <div class="row align-items-start">
+          <div class="col-2"  ></div>
+          <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+            <form id="loginForm">
+              <label for="loginUsername">Username:</label>
+              <input type="text" id="loginUsername" name="loginUsername" required><br>
+      
+              <label for="loginPassword">Password:</label>
+              <input type="password" id="loginPassword" name="loginPassword" required><br>
+      
+              <button type="button" onclick="login()">Login</button>
+          </form>
+        </div>
+        <div class="col-2"  ></div>
+      </div>
+        <!--New user sign up -->
+        <div class="row align-items-start">
+          <div class="col-2"  ></div>
+          <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+            <p>WELCOME TO WATCH-IT APP</p>
+            <form style="font-size: 10pt;" id="newAssetForm">
+              <p>New User? Sign Up</p>
+            <div class="mb-3">
+              <label for="UserName" class="form-label">User Name</label>
+              <input type="text" class="form-control" id="UserName">
+            </div>
+            <div class="mb-3">
+              <label for="Cost" class="form-label">Cost Paid</label>
+              <input type="number" class="form-control" id="Cost">
+            </div>
+            <div class="mb-3">
+              <label for="emailID" class="form-label">Email ID</label>
+              <input type="text" class="form-control" id="emailID">
+            </div>
+            <div class="mb-3">
+              <label for="AddressLine1" class="form-label">Address Line 1</label>
+              <input type="text" class="form-control" id="AddressLine1">
+            </div>
+            <div class="mb-3">
+              <label for="AddressLine2" class="form-label">Address Line 2</label>
+              <input type="text" class="form-control" id="AddressLine2">
+            </div>
+            <div class="mb-3">
+              <label for="UserPasswrd" class="form-label">Password</label>
+              <input type="text" class="form-control" id="UserPasswrd">
+            </div>
+            <button type="button" id="CreateUser" class="btn btn-primary">Create</button> <br/><br/>  
+            </form>
+          </div>
+          <div class="col-2"  ></div>
+        </div>
+        <!-------------------------------------------------------------->
+        <!-- view Asset Area-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+            <div class="col-8" style="text-align: left;" >
+              <div style="padding:5px;">
+                <button  id = "retImages" type="button" class="btn btn-primary">View Videos</button>
+              </div>
+              <div id="ImageList">
+                <h4>Please click the Videos button if you wish to view on the system.</h4>
+              </div>
+            </div>
+            <div class="col-2"  ></div>
+        </div>
+    </div> 
+  </body>
+</html>
